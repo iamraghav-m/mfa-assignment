@@ -1,0 +1,89 @@
+
+.photo-list {
+  padding: 1rem;
+
+  .list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    
+    .back-button {
+      padding: 8px 16px;
+      background-color: #6c757d;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      
+      &:hover {
+        background-color: #5a6268;
+      }
+    }
+  }
+
+  .photos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+
+  .photo-item {
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 0.5rem;
+    }
+    
+    h4 {
+      font-size: 1rem;
+      text-align: center;
+      margin-bottom: 0.5rem;
+      height: 40px;
+      overflow: hidden;
+    }
+    
+    p {
+      margin-bottom: 1rem;
+    }
+    
+    .add-favorite-button {
+      padding: 6px 12px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      
+      &:hover {
+        background-color: #218838;
+      }
+    }
+    
+    .remove-favorite-button {
+      padding: 6px 12px;
+      background-color: #dc3545;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      
+      &:hover {
+        background-color: #c82333;
+      }
+    }
+  }
+
+  .loading {
+    text-align: center;
+    margin-top: 2rem;
+  }
+}

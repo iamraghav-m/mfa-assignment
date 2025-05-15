@@ -1,0 +1,15 @@
+{
+  "name": "module-federation-application",
+  "description": "This is a basic module federation application",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "start": "pnpm run --filter typescript-react-fallback_app* --parallel start",
+    "build": "pnpm run --filter typescript-react-fallback_app* build",
+    "serve": "pnpm run --filter typescript-react-fallback_app* --parallel serve",
+    "clean": "pnpm run --filter typescript-react-fallback_app* --parallel clean"
+  },
+  "devDependencies": {
+    "wait-on": "7.2.0"
+  }
+}
